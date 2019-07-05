@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint . && prettier-eslint --list-different **/*.js",
-    "format": "prettier-eslint --write **/*.js"
+    "format": "prettier-eslint --write **/*.js",
+    "build": "webpack --mode development index.js tetris.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,9 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "prettier": "^1.18.2",
-    "prettier-eslint": "^9.0.0"
+    "prettier-eslint": "^9.0.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
   },
   "dependencies": {
     "react": "^16.8.6",
